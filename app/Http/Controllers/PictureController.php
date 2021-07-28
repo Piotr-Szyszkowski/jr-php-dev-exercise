@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers; // <-- that's a new one - hmm - PHP Namespaces provide a way in which to group related classes, interfaces, functions and constants
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
