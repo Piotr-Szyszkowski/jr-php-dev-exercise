@@ -30,7 +30,7 @@
         <div class="container px-24 mt-8 mx-auto">
             <header class="flex items-center mb-12">
                 <h1 class="text-6xl">The Dog House</h1>
-                <a href="{{ route('pictures.create') }}" class="ml-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <a href="{{ route('pictures.create') }}" class="ml-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> <!-- @Piotr -  a link to route pictures/create, translated to http://localhost:8000/pictures/create --> 
                     Add your own dog
                 </a>
             </header>
