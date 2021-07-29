@@ -16,7 +16,8 @@ use App\Http\Controllers\PictureController;
 |
 */
 
-Route::get('/', [PictureController::class, 'index']);
+Route::get('/', [PictureController::class, 'index']); 
+// @Piotr - when the server receives GET request to "/" address...then  [PictureController::class, 'index'] is fired, -- my guess is: PictureController gets to work, and when finished -> renders view 'index.blade.php' - hard to tell as not a straightforward function.
 
 Route::resources([
     'pictures' => PictureController::class,

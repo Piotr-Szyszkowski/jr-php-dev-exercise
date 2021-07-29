@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers; // <-- that's a new one - hmm - PHP Namespaces provide a way in which to group related classes, interfaces, functions and constants
+namespace App\Http\Controllers; // @Piotr <-- that's a new one - hmm - PHP Namespaces provide a way in which to group related classes, interfaces, functions and constants
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use App\Models\Picture;
+use App\Models\Picture; // @Piotr - "facades" - 
 
 class PictureController extends Controller
 {
@@ -16,6 +16,7 @@ class PictureController extends Controller
     public function index()
     {
         $pictures = Picture::all();
+        // @Piotr - another guess - 
 
         return view('index', ['pictures' => $pictures]);
     }

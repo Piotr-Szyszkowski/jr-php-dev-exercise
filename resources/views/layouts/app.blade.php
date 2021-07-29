@@ -1,4 +1,4 @@
-<!-- P.S. Assuming (for now) this is the main/first loaded file/template, that would then in turn dynamically generate content of other sub components and  -->
+<!-- @Piotr -  Assuming (for now) this is the main/first loaded file/template, that would then in turn dynamically generate content of other sub components and  -->
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -35,7 +35,7 @@
                 </a>
             </header>
 
-            @yield('content') <!-- P.S. generator function --> 
+            @yield('content') <!-- @Piotr -  generator function --> 
         </div>
     </body>
 </html>
