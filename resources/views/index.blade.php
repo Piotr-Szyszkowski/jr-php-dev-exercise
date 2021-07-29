@@ -6,7 +6,7 @@
 <div class="flex flex-wrap">
 <?php echo $pictures?> 
 <!-- @Piotr - can print pictures but no idea where they are coming from... -->
-@foreach ($pictures as $picture) <!-- @Piotr -  renders picture elements with foreach, but where is $pictures coming from... -->
+@foreach ($pictures as $picture) <!-- @Piotr -  renders picture elements with foreach, but where is $pictures coming from... ok, they come from PictureController.php, declared line 18 and returned as array line 20. Where is the original data coming from though? SOmething to do with "use Illuminate\Database\Eloquent\Model;" in app.Models/Picture.php-->
     <div class="w-4/12 lg:w-3/12 p-2">
         <div class="rounded overflow-hidden bg-white border border-gray-200 p-4">
             <img class="w-full h-full" width="400px" src="{{ asset('storage/' . $picture->file_path) }}">

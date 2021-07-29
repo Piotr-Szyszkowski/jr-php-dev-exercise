@@ -15,10 +15,9 @@ class PictureController extends Controller
      */
     public function index()
     {
-        $pictures = Picture::all();
-        // @Piotr - another guess - 
+        $pictures = Picture::all(); // @Piotr - another guess - using "::" to access protected $fillable
 
-        return view('index', ['pictures' => $pictures]);
+        return view('index', ['pictures' => $pictures]); // @Piotr - returns view "index", 
     }
 
     /**
