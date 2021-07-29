@@ -17,7 +17,7 @@ class PictureController extends Controller
     {
         $pictures = Picture::all(); // @Piotr - another guess - using "::" to access protected $fillable
 
-        return view('index', ['pictures' => $pictures]); // @Piotr - returns view "index", 
+        return view('index', ['pictures' => $pictures]); // @Piotr - returns view "index", // my only explanation as for how we have access to 'pictures table is that Illuminate\Database\Eloquent\Model<-- object has access to it. Now 'pictures' has value of $pictures which is an array returned by Picture::all() - I guess. And index has access to it.
     }
 
     /**
