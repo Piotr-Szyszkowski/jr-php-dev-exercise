@@ -20,7 +20,7 @@ class CreatePicturesTable extends Migration
             $table->integer('votes')->default(0);
             $table->timestamps();
         });
-    }
+    } // @Piotr - not discovering America here but - tie up() function creates the 'pictures table' with all its structure, defines columns etc.
 
     /**
      * Reverse the migrations.
@@ -29,6 +29,6 @@ class CreatePicturesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pictures');
+        Schema::dropIfExists('pictures'); //@Piotr - looks like pretty much reverse of the up() function
     }
 }
